@@ -1,5 +1,5 @@
 library(shiny)
-
+library(kohonen)
 ui <- shinyUI(fluidPage(
    
    # Application title

@@ -1,3 +1,5 @@
+# AUTHOR - Tilak Putta
+# Date   - 8th March, 2018
 library(shiny)
 library(kohonen)
 ui <- shinyUI(fluidPage(

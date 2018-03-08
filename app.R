@@ -56,6 +56,7 @@ server <- shinyServer(function(input, output) {
         return(NULL)
       }
       data <- read.csv(inputFile$datapath, header = input$header)
+      data = data[, -c(5)]
       sommap <- som(scale(data), grid = somgrid(input$xNeurons, input$yNeurons, "hexagonal"))
       ## use hierarchical clustering to cluster the codebook vectors
       groups <- input$groups
